@@ -1,8 +1,8 @@
 {
-  "name": "@azure/communication-react",
-  "version": "1.29.0-beta.0",
+  "name": "communication-react-19",
+  "version": "1.0.0",
   "sideEffects": false,
-  "description": "React library for building modern communication user experiences utilizing Azure Communication Services",
+  "description": "React library for building modern communication user experiences utilizing Azure Communication Services (React 19 compatible fork)",
   "keywords": [
     "Communication",
     "Chat",
@@ -12,16 +12,16 @@
     "Video conferencing",
     "Teams"
   ],
-  "homepage": "https://azure.github.io/communication-ui-library/",
+  "homepage": "https://github.com/Ocuco/communication-ui-library",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Azure/communication-ui-library.git"
+    "url": "https://github.com/Ocuco/communication-ui-library.git"
   },
   "bugs": {
-    "url": "https://github.com/Azure/communication-ui-library/issues/new/choose"
+    "url": "https://github.com/Ocuco/communication-ui-library/issues"
   },
-  "types": "dist/communication-react.d.ts",
+  "types": "dist/communication-react-19.d.ts",
   "dependencies": {
     "@azure/communication-common": "^2.3.2-beta.1 || ^2.3.1",
     "@azure/core-paging": "^1.5.0",
@@ -58,10 +58,10 @@
     "@azure/communication-calling-effects": "^1.1.4",
     "@azure/communication-calling": "1.37.1-beta.1 || ^1.36.1",
     "@azure/communication-chat": "1.6.0-beta.7 || >=1.5.4",
-    "@types/react": ">=16.8.0 <20.0.0",
-    "@types/react-dom": ">=16.8.0 <20.0.0",
-    "react": ">=16.8.0 <20.0.0",
-    "react-dom": ">=16.8.0 <20.0.0"
+    "@types/react": ">=16.8.0 <21.0.0",
+    "@types/react-dom": ">=16.8.0 <21.0.0",
+    "react": ">=16.8.0 <21.0.0",
+    "react-dom": ">=16.8.0 <21.0.0"
   },
   "main": "./dist/dist-cjs/communication-react/index.js",
   "module": "./dist/dist-esm/communication-react/src/index.js",
@@ -69,7 +69,7 @@
     ".": {
       "main": "./dist/dist-cjs/communication-react/index.js",
       "module": "./dist/dist-esm/communication-react/src/index.js",
-      "types": "./dist/communication-react.d.ts"
+      "types": "./dist/communication-react-19.d.ts"
     },
     "./javascript-loaders": {
       "module": "./dist/dist-esm/communication-react/src/javascript-loaders.js",
@@ -179,7 +179,7 @@
     "@eslint/compat": "~1.2.9",
     "jiti": "~2.4.2"
   },
-  "beachball": {
-    "shouldPublish": false
+  "publishConfig": {
+    "access": "public"
   }
 }
