@@ -26,7 +26,7 @@
       "reviewCategory": "internal"
     },
     {
-      "packageName": "@azure/communication-react",
+      "packageName": "communication-react-19",
       "projectFolder": "packages/communication-react",
       "reviewCategory": "production"
     },
