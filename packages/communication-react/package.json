@@ -1,6 +1,6 @@
 {
   "name": "communication-react-19",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sideEffects": false,
   "description": "React library for building modern communication user experiences utilizing Azure Communication Services (React 19 compatible fork)",
   "keywords": [
@@ -67,13 +67,13 @@
   "module": "./dist/dist-esm/communication-react/src/index.js",
   "exports": {
     ".": {
-      "main": "./dist/dist-cjs/communication-react/index.js",
-      "module": "./dist/dist-esm/communication-react/src/index.js",
-      "types": "./dist/communication-react-19.d.ts"
+      "types": "./dist/communication-react-19.d.ts",
+      "import": "./dist/dist-esm/communication-react/src/index.js",
+      "require": "./dist/dist-cjs/communication-react/index.js"
     },
     "./javascript-loaders": {
-      "module": "./dist/dist-esm/communication-react/src/javascript-loaders.js",
-      "types": "./dist/dist-esm/communication-react/src/javascript-loaders.d.ts"
+      "types": "./dist/dist-esm/communication-react/src/javascript-loaders.d.ts",
+      "import": "./dist/dist-esm/communication-react/src/javascript-loaders.js"
     }
   },
   "scripts": {
